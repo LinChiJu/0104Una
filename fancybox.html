@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+    <script src="source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="source/helpers/jquery.fancybox-media.js"></script>
+    <script src="source/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="source/jquery.fancybox.css">
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-thumbs.css">
+    <style>
+        img{width: 200px;}
+        .box{-webkit-box-shadow:;
+            -mo2-box-shadow:;
+            -ms-box-shadow:;
+            -o-box-shadow:;
+            box-shadow: ;
+            box-sizing: border-box;    
+            }
+    </style>
+    <script>
+    $(document).ready(function({
+        $(".fancy").fancybox({
+        openEffect:"elastic",
+        closeEffect:"fade",
+        nextEffect:"elastic",
+        prevEffect:"fade",
+        openSpeed:1000,
+        closeSpeed:1000,
+        nextSpeed:1000,
+        prevSpeed:1000,
+        padding:8,
+        helpers:{thumbs:{width:50,
+    height:50
+    },
+        title:{type:"float"
+        }
+       }
+      });
+    });
+    </script>
+</head>
+<body>
+    <div class="container">
+          <div class="box">
+            <a href="img13.jpg" class="fancy">
+                <img src="img13.jpg" alt="aaa" title="高塔">
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <a href="img15.jpg" class="fancy">
+                <img src="img15.jpg" alt="aaa" title="白牆" >
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <a href="img16.jpg" class="fancy">
+                <img src="img16.jpg" alt="aaa"title="藍光" >
+            </a>
+        </div>
+    </div>
+</body>
+</html>
